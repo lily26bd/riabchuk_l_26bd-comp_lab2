@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #F0F0F0;
+}
+
+.home {
+    margin-left: 150px;
+    color: white;
+}
+
+.logo {
+    height: 60px;
+    color: white;
+    width: 100%;
+    background-color: #333333;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    width: 100%;
+}
+
+nav {
+    margin-left: 100px;
+}
+
+.search {
+    margin-right: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li :hover {
+    color: red;
+}
+
+.search input {
+    padding: 8px;
+}
+
+.header-content {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+    background-color: gray;
+    width: 100%;
+}
+
+.block1 {
+    width: 100%;
+    height: 544px;
+    color: gray;
+}
+
+.block2 {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 670px;
+    background-color: lightgray;
+}
+
+.title {
+    text-align: center;
+    padding: 0 200px;
+}
+
+.icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 200px;
+    padding: 50px 0;
+}
+
+.icon img {
+    width: 128px;
+    height: 112px;
+}
+
+.card {
+    width: 310px;
+    height: 184px;
+}
+
+.content-grid {
+    margin-top: 30px;
+    width: 980px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.desc {
+    padding-right: 10px;
+    height: 94px;
+    background-color: white;
+}
+
+.content-block {
+    background: #CCCCCC;
+    width: 310px;
+    height: 278px;
+}
+
+.block3 {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    height: 176px;
+    width: 100%;
+}
+
+.logo-img {
+    margin-top: 35px;
+    height: 100px;
+    width: 100px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 0 200px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 55px;
+    height: 88px;
+}
