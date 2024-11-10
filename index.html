@@ -1,110 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-    <div class="logo">
-        <br>
-        <a href="#" class="home">LOGO</a>
-    </div>
-    <div class="container header-top">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="search">
-            <input type="text" placeholder="Search Something...">
-        </div>
-    </div>
-    <div class="container header-content">
-        <h1>Центральный заголовок</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    </div>
-</header>
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-<div class="block1">
-    <div class="title">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h2>
-        <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-            Nemo enim ipsam voluptatem</p>
-    </div>
-    <section class="icons">
-        <div class="icon">
-            <img src="img/icon1.png" alt="Icon 1">
-            <p>Title for Icon 1</p>
-            <p>Description for Icon 1</p>
-        </div>
-        <div class="icon">
-            <img src="img/icon2.png" alt="Icon 2">
-            <p>Title for Icon 2</p>
-            <p>Description for Icon 2</p>
-        </div>
-        <div class="icon">
-            <img src="img/icon3.png" alt="Icon 3">
-            <p>Title for Icon 3</p>
-            <p>Description for Icon 3</p>
-        </div>
-    </section>
-</div>
-<div class="block2">
-    <section class="content-grid">
-        <div class="content-block">
-            <img class="card" src="img/img1.png" alt="Img">
-            <div class="desc">Title
-                <p>Description</p></div>
-        </div>
-        <div class="content-block">
-            <img class="card" src="img/img1.png" alt="Img">
-            <div class="desc">Title
-                <p>Description</p></div>
-        </div>
-        <div class="content-block">
-            <img class="card" src="img/img1.png" alt="Img">
-            <div class="desc">Title
-                <p>Description</p></div>
-        </div>
-        <div class="content-block">
-            <img class="card" src="img/img1.png" alt="Img">
-            <div class="desc">Title
-                <p>Description</p></div>
-        </div>
-        <div class="content-block">
-            <img class="card" src="img/img1.png" alt="Img">
-            <div class="desc">Title
-                <p>Description</p></div>
-        </div>
-        <div class="content-block">
-            <img class="card" src="img/img1.png" alt="Img">
-            <div class="desc">Title
-                <p>Description</p></div>
-        </div>
-    </section>
-</div>
-<div class="block3">
-    <img src="img/logo1.webp" class="logo-img" alt="Img">
-    <img src="img/logo1.webp" class="logo-img" alt="Img">
-    <img src="img/logo1.webp" class="logo-img" alt="Img">
-    <img src="img/logo1.webp" class="logo-img" alt="Img">
-</div>
-<footer class="container">
-    <div class="footer-section">
-        <p>LOGO</p>
-        <p>Popular Post</p>
-        <p>Tags</p>
-        <p>A little about us</p>
-        <p>Get in touch</p>
-    </div>
-</footer>
-</body>
-</html>
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #F0F0F0;
+}
+
+.home {
+    margin-left: 150px;
+    color: white;
+}
+
+.logo {
+    height: 60px;
+    color: white;
+    width: 100%;
+    background-color: #333333;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    width: 100%;
+}
+
+nav {
+    margin-left: 100px;
+}
+
+.search {
+    margin-right: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li :hover {
+    color: red;
+}
+
+.search input {
+    padding: 8px;
+}
+
+.header-content {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+    background-color: gray;
+    width: 100%;
+}
+
+.block1 {
+    width: 100%;
+    height: 544px;
+    color: gray;
+}
+
+.block2 {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 670px;
+    background-color: lightgray;
+}
+
+.title {
+    text-align: center;
+    padding: 0 200px;
+}
+
+.icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 200px;
+    padding: 50px 0;
+}
+
+.icon img {
+    width: 128px;
+    height: 112px;
+}
+
+.card {
+    width: 310px;
+    height: 184px;
+}
+
+.content-grid {
+    margin-top: 30px;
+    width: 980px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.desc {
+    padding-right: 10px;
+    height: 94px;
+    background-color: white;
+}
+
+.content-block {
+    background: #CCCCCC;
+    width: 310px;
+    height: 278px;
+}
+
+.block3 {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    height: 176px;
+    width: 100%;
+}
+
+.logo-img {
+    margin-top: 35px;
+    height: 100px;
+    width: 100px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 0 200px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 55px;
+    height: 88px;
+}
